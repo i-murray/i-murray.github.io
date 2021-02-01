@@ -10,81 +10,126 @@
     <title>Ian MacDougall Murray</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="sticky-footer.css" rel="stylesheet">
+    <script>
+        window.MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            packages: { '[+]': ['mhchem'] }
+        },
+        loader: { load: ['[tex]/mhchem'] },
+    };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 
 <body class="d-flex flex-column h-100">
+    <div class="modal fade" id="modalMasters" tabindex="-1" aria-labelledby="modalLabelMasters" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabelMasters">Master's thesis</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Nuclear structure can be uniquely probed by beta-decay experiments, being highly selective, and capable of providing information for nuclei far away from stability. One open question in nuclear-astrophysics which may be addressed by $\beta$-decay measurements is the rapid neutron capture nucleosynthesis process.</p>
+                    <p>For this thesis, a novel $\beta$ detector was specially designed and fabricated for $\beta$-decay spectroscopy at the IGISOL-4 facility, University of Jyväskylä, Finland. In experiments, a purified isotope beam will be implanted on a tape and $\beta$-decays will be detected by this detector. In addition, low energy HPGe detectors will be placed surrounding the $\beta$ detector to enable simultaneous $\gamma$-ray spectroscopy.</p>
+                    <p>The developed $\beta$ detector incorporates a thin plastic scintillator with a spherical shell geometry to maximize solid angle coverage (3.7$\pi$). Photodetectors of silicon photomultipliers (SiPM) are integrated along the edges and are supported by self-made PCBs. Low x-ray attenuation is achieved with the scintillator having a thickness of only 1.0 mm and permits the detection of x-rays generated in $\beta$-decay by surrounding HPGe gamma detectors with low transmission loss. To match the dynamic range of digitizers and standard NIM electronics it is necessary for pulses from the SiPMs to be amplified. For this reason, an 8 channel ultra-fast preamplifier was custom built utilizing MMICs (Monolithic microwave integrated circuits). The preamplifier incorporated bias regulation and noise filtering. All $\beta$-detector parts were self-fabricated at the University of Jyväskylä. In addition, a procedure to recover position information with post-processing of the SiPM signals from different amplitudes of the quadrants was demonstrated.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalPhD" tabindex="-1" aria-labelledby="modalLabelPhD" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabelPhD">PhD thesis</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>The nature of the atomic nucleus as a quantum many-body system leads to the emergence of microscopic properties. One such property, the observation of magic numbers of nucleons has permitted the development of the independent-particle shell model of the nucleus. These magic numbers of nucleons, which appear as large energy gaps in the spherical nuclear shell model, is known to erode in asymmetric nuclear systems far from nuclear stability.</p>
+                    <p>The evolution of this behavior was studied in at, and near, magic neutron numbers $\textrm{N}=20$ and $\textrm{N}=28$ in neutron-rich neon (\(\ce{^{32}Ne}\)) and aluminum (\(\ce{^{39,-41}Al}\)). Nuclear collectivity and excited state structure was deduced by in-beam gamma-ray spectroscopy of knockout reactions and inelastic scattering.</p>
+                    <p>The experiments were carried out at the RIKEN Nishina Center, RIBF. A coupled set of linear and cyclotron accelerators were used to generate a high energy beam of \(\ce{ ^{48}Ca+}\) at $345\; \textrm{MeV}\textrm{u}^{-1}$. This beam impinged on a target, producing a radioactive ion beam, of many species, via projectile fragmentation. The magnetic separator BigRIPS was used to both filter these isotopes and provide event-by-event isotope identification by in-beam time-of-flight and energy loss detectors. At the end of BigRIPS, an additional target was placed to induce secondary nuclear reactions producing \(\ce{^{32}Ne}\) and \(\ce{^{39,40,41}Al}\) nuclei in excited states. These states decay promptly by $\gamma$ emission and the DALI2 detector array, surrounding the secondary target, detected these $\gamma$-rays.</p>
+                    <p>The reconstructed $\gamma$-ray spectra, corrected for relativistic effects, revealed new nuclear structure of \(\ce{^{32}Ne}\) and \(\ce{^{39,40,41}Al}\). For \(\ce{^{32}Ne}\), a new transition was assigned to a $4^+\rightarrow2^+$ transition. Shell-model calculations with large valence spaces were performed and the predicted states are in agreement with the experimentally assigned $2^+$ and $4^+$ levels. The observed states and ground state are predicted to be almost pure intruder configurations and composed mainly of 2p-2h and 4p-4h components. Furthermore, the deduced large $R_{4/2}$ ratio of 2.99(6) indicates a continuing trend of increasing collectivity for $N>20$ in neon and additional evidence of this nuclide in the so-called island of inversion. Lastly, inclusive and exclusive cross sections of one- and two-proton knockout reaction cross sections to \(\ce{^{32}Ne}\) revealed a significant suppression factor and extend systematics for neon isotopes and more generally as a function of nuclear asymmetry. For \(\ce{^{39,40,41}Al}\) isotopes, new energy levels were tentatively proposed and suggest a high degree of deformation near magic $N=28$.</p>
+                </div>
+            </div>
+        </div>
+    </div>
     <main class="flex-shrink-0">
         <div class="container">
             <h1 class="mt-4">Ian MacDougall Murray</h1>
-            <p class="lead">Online CV</p>
             <div class="row">
                 <div class="col">
                     <figure class="figure">
-                        <img src="self.png" class="figure-img img-fluid rounded" alt="...">
-                        <figcaption class="figure-caption">A caption.</figcaption>
+                        <img src="self.jpg" class="figure-img img-fluid rounded" alt="...">
+                        <figcaption class="figure-caption"><a href="https://goo.gl/maps/pJm65SNxTY8tg6Gx8">井仁の棚田
+                            </a></figcaption>
                     </figure>
                 </div>
                 <div class="col">
                     <dl class="row">
-                        <dt class="col-sm-4">Email</dt>
-                        <dd class="col-sm-8">ianmacdougallmurray [at] gmail.com</dd>
-                        <dt class="col-sm-4">Location</dt>
-                        <dd class="col-sm-8">Hiroshima-shi, Japan
-                        </dd>
-                        <dt class="col-sm-4">Hometown</dt>
-                        <dd class="col-sm-8">Toronto, Canada</dd>
+                        <h5>Email</h5>
+                        <p>ianmacdougallmurray [at] gmail.com</p>
+                        <h5>Location</h5>
+                        <p>Hiroshima-shi, Japan</p>
+                        <h5>Hometown</h5>
+                        <p>Toronto, Canada</p>
                     </dl>
                 </div>
             </div>
             <h2 class="mt-5">Education</h2>
-            <dl class="row">
-                <dt class="col-sm-2">Undergraduate</dt>
-                <dd class="col-sm-10">
-                    <ul>
-                        <li>
-                            <ul class="list-inline">
-                                <li class="list-inline-item">Honours Physics,</li>
-                                <li class="list-inline-item">B.Sc.,</li>
-                                <li class="list-inline-item"><a href="http://www.uwo.ca">University of Western Ontario</a>,</li>
-                                <li class="list-inline-item">Camada,</li>
-                                <li class="list-inline-item"><small class="text-muted">9.2008 - 6.2013</small></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <ul class="list-inline">
-                                <li class="list-inline-item">Physics,</li>
-                                <li class="list-inline-item">Semester abroad,</li>
-                                <li class="list-inline-item"><a href="http://www.umu.se">Umeå University</a>,</li>
-                                <li class="list-inline-item">Sweden,</li>
-                                <li class="list-inline-item"><small class="text-muted">8.2010 - 1.2011</small></li>
-                            </ul>
-                        </li>
+            <h4>Undergraduate</h4>
+            <ul>
+                <li>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">Honours Physics,</li>
+                        <li class="list-inline-item">B.Sc.,</li>
+                        <li class="list-inline-item"><a href="http://www.uwo.ca">University of Western Ontario</a>,</li>
+                        <li class="list-inline-item">Canada,</li>
+                        <li class="list-inline-item"><small class="text-muted">9.2008 - 6.2013</small></li>
                     </ul>
-                </dd>
-                <dt class="col-sm-2">Graduate</dt>
-                <dd class="col-sm-10">
-                    <ul>
-                        <li>
-                            <ul class="list-inline">
-                                <li class="list-inline-item">Nuclear and Particle Physics,</li>
-                                <li class="list-inline-item">M.Sc.,</li>
-                                <li class="list-inline-item"><a href="http://www.jyu.fi">University of Jyväskylä</a>,</li>
-                                <li class="list-inline-item">Finland,</li>
-                                <li class="list-inline-item"><small class="text-muted">9.2013 - 10.2015</small></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <ul class="list-inline">
-                                <li class="list-inline-item">Nuclear Physics,</li>
-                                <li class="list-inline-item">PhD,</li>
-                                <li class="list-inline-item"><a href="https://http://www.universite-paris-saclay.fr/en">University of Paris-Saclay & Paris-Sud University</a>,</li>
-                                <li class="list-inline-item">France,</li>
-                                <li class="list-inline-item"><small class="text-muted">10.2015 - 7.2018</small></li>
-                            </ul>
-                        </li>
+                </li>
+                <li>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">Physics,</li>
+                        <li class="list-inline-item">Semester abroad,</li>
+                        <li class="list-inline-item"><a href="http://www.umu.se">Umeå University</a>,</li>
+                        <li class="list-inline-item">Sweden,</li>
+                        <li class="list-inline-item"><small class="text-muted">8.2010 - 1.2011</small></li>
                     </ul>
-                </dd>
-            </dl>
+                </li>
+            </ul>
+            <h4>Graduate</h4>
+            <ul>
+                <li>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">Nuclear and Particle Physics,</li>
+                        <li class="list-inline-item">M.Sc.,</li>
+                        <li class="list-inline-item"><a href="http://www.jyu.fi">University of Jyväskylä</a>,</li>
+                        <li class="list-inline-item">Finland,</li>
+                        <li class="list-inline-item"><small class="text-muted">9.2013 - 10.2015</small></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">Nuclear Physics,</li>
+                        <li class="list-inline-item">PhD,</li>
+                        <li class="list-inline-item"><a href="https://http://www.universite-paris-saclay.fr/en">University of Paris-Saclay & Paris-Sud University</a>,</li>
+                        <li class="list-inline-item">France,</li>
+                        <li class="list-inline-item"><small class="text-muted">10.2015 - 7.2018</small></li>
+                    </ul>
+                </li>
+            </ul>
+            <h2 class="mt-5">Skills</h2>
+            <ul>
+                <li>Programming - Python (libraries: PyTorch, Scikit-learn, Numpy, Pandas, Flask, AIOHTTP)</li>
+                <li>Containerization - Docker</li>
+                <li>Microservice development & deployment - Docker swarm</li>
+                <li>Database design & deployment - PostgreSQL & Microsoft SQL Server</li>
+                <li>ETL workflow orchestration - Airflow & RabbitMQ</li>
+                <li>Big Data - Hadoop & Hive</li>
+                <li>Web application development - HTML & JavaScript (jQuery, Vue.js)</li>
+                <li>Scientific data analysis - ROOT (C++)</li>
+            </ul>
             <h2 class="mt-5">Work and Academic Experience</h2>
             <div class="row" data-masonry='{"percentPosition": true }'>
                 <div class="col-sm-6 col-lg-4 mb-4">
@@ -112,7 +157,14 @@
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">Internship</h5>
-                            <p class="card-text">Development of custom cathodoluminescence system, repair and maintenance of UHV system and HPGe detectors</p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <p class="card-text">Development of custom cathodoluminescence system</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <p class="card-text">Maintenance of UHV system and HPGe detectors</p>
+                                </li>
+                            </ul>
                             <p class="card-text"><small class="text-muted">6.2012 - 6.2013</small></p>
                         </div>
                     </div>
@@ -145,7 +197,15 @@
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">Internship</h5>
-                            <p class="card-text">Development of Bradbury-Nielsen ion gate and carbon cluster ion source</p>
+                            <p class="lead"><a href="https://home.cern/science/experiments/isolde">ISOLDE</a>, CERN, Switzerland</p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <p class="card-text">Development of Bradbury-Nielsen ion gates</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <p class="card-text">Development of a carbon cluster ion source</p>
+                                </li>
+                            </ul>
                             <p class="card-text"><small class="text-muted">5.2014 - 8.2014</small></p>
                         </div>
                     </div>
@@ -177,31 +237,140 @@
                             </a>
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Internation Program Associate</h5>
-                            <p class="card-text">Doctor’s thesis research on the Big Island of Deformation at N=20, 28</p>
+                            <h5 class="card-title">Master's thesis</h5>
+                            <p class="lead"><a href="http://www.jyu.fi">University of Jyväskylä</a>, Jyväskylä, Finland</p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <p class="card-text">Development of a novel $3.7\pi$ $\beta$-detector for post-trap decay studies at IGISOL</p><button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#modalMasters">More info
+                                    </button>
+                                </li>
+                            </ul>
+                            <p class="card-text"><small class="text-muted">2015</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <div class="card mb-3">
+                        <div id="carouselPhD" class="carousel slide" data-bs-ride="carousel" data-bs-interval=false data-bs-keyboard=false>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/phd_1.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/phd_2.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/phd_3.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselPhD" role="button" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselPhD" role="button" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">International Program Associate</h5>
+                            <p class="lead"><a href="http://www.riken.jp/en/collab/resources/ribf/">RIBF</a>, RIKEN, Tokyo, Japan</p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <p class="card-text">Doctor’s thesis research on the Big Island of Deformation at N=20, 28</p>
+                                    <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#modalPhD">More info
+                                    </button>
+                                </li>
+                                <li class="list-group-item">
+                                    <p class="card-text">First heavy-element MR-TOF mass measurements</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <p class="card-text">Novel GAGG scintillator characterization</p>
+                                </li>
+                            </ul>
                             <p class="card-text"><small class="text-muted">11.2015 - 9.2017</small></p>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-4 mb-4">
                     <div class="card mb-3">
-                        <img src="..." class="card-img-top" alt="...">
+                        <img src="images/micron_1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Micron Memory Japan</h5>
-                            <p class="card-text">Research on AI techniques for DRAM on product overlay
-                                improvement</p>
+                            <h5 class="card-title">Metrology engineer, Data scientist</h5>
+                            <p class="lead"><a href="http://www.micron.com">Micron Memory Japan</a>, Hiroshima, Japan</p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <p class="card-text">Research on novel AI techniques for DRAM on product overlay
+                                        improvement</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <p class="card-text">Development of web-applications to automate process context impact estimation on metrology</p>
+                                </li>
+                            </ul>
                             <p class="card-text"><small class="text-muted">10.2018 - </small></p>
                         </div>
                     </div>
                 </div>
             </div>
+            <h2 class="mt-5">Publications</h2>
+            <ul>
+                <li>
+                    <h4>Original Papers</h4>
+                    <ul>
+                        <li>
+                            <h5>Peer-Reviewed Journals, First Author</h5>
+                            <ul>
+                                <li>"Spectroscopy of strongly deformed \(\ce{^{32}Ne}\) by proton knockout reactions" <strong>I. Murray</strong>, M. MacCormick, D. Bazin, P. Doornenbal, N. Aoi, H. Baba, H. Crawford, P. Fallon, K. Li, J. Lee, M. Matsushita, T. Motobayashi, T. Otsuka, H. Sakurai, H. Scheit, D. Steppenbeck, S. Takeuchi, J. A. Tostevin, N. Tsunoda, Y. Utsuno, H. Wang, and K. Yoneda, Phys. Rev. C (Rapid Comm.), vol.99, pp.011302 (1-7), Janurary 2019
+                            </ul>
+                        <li>
+                            <h5>Peer Reviewed Journals, Non-First Author</h5>
+                            <ul>
+                                <li>"Two-Neutron Halo is Unveiled in $^{29}\mathrm{F}$, . Bagchi, R. Kanungo, Y. K. Tanaka, H. Geissel, P. Doornenbal, W. Horiuchi, G. Hagen, T. Suzuki, N. Tsunoda, D. S. Ahn, H. Baba, K. Behr, F. Browne, S. Chen, M. L. Cortes, A. Estrade, N. Fukuda, M. Holl, K. Itahashi, N. Iwasa, G. R. Jansen, W. G. Jiang, S. Kaur, A. O. Macchiavelli, S. Y. Matsumoto, S. Momiyama, <strong>I. Murray</strong>, T. Nakamura, S. J. Novario, H. J. Ong, T. Otsuka, T. Papenbrock, S. Paschalis, A. Prochazka, C. Scheidenberger, P. Schrock, Y. Shimizu, D. Steppenbeck, H. Sakurai, D. Suzuki, H. Suzuki, M. Takechi, H. Takeda, S. Takeuchi, R. Taniuchi, K. Wimmer, and K. Yoshida, Phys. Rev. Lett., vol.124(22), pp. 222504 (1-7), June 2020
+                                <li>"Restoration of the natural E(1/21+) - E(3/21+) energy splitting in odd-K isotopes towards $N = 40$", Y.L. Sun, A. Obertelli, P. Doornenbal, C. Barbieri, Y. Chazono, T. Duguet, H.N. Liu, P. Navrátil, F. Nowacki, K. Ogata, T. Otsuka, F. Raimondi, V. Somà, Y. Utsuno, K. Yoshida, N. Achouri, H. Baba, F. Browne, D. Calvet, F. Château, S. Chen, N. Chiga, A. Corsi, M.L. Cortés, A. Delbart, J.-M. Gheller, A. Giganon, A. Gillibert, C. Hilaire, T. Isobe, T. Kobayashi, Y. Kubota, V. Lapoux, T. Motobayashi, <strong>I. Murray</strong>, H. Otsu, V. Panin, N. Paul, W. Rodriguez, H. Sakurai, M. Sasano, D. Steppenbeck, L. Stuhl, Y. Togano, T. Uesaka, K. Wimmer, K. Yoneda, O. Aktas, T. Aumann, L.X. Chung, F. Flavigny, S. Franchoo, I. Gašparić, R.-B. Gerst, J. Gibelin, K.I. Hahn, D. Kim, T. Koiwai, Y. Kondo, P. Koseoglou, J. Lee, C. Lehr, B.D. Linh, T. Lokotko, M. MacCormick, K. Moschner, T. Nakamura, S.Y. Park, D. Rossi, E. Sahin, D. Sohler, P.-A. Söderström, S. Takeuchi, H. Törnqvist, V. Vaquero, V. Wagner, S. Wang, V. Werner, X. Xu, H. Yamada, D. Yan, Z. Yang, M. Yasuda, L. Zanetti, Phys. Lett. B, vol.802, pp.135215 (1-7), March 2020
+                                <li>"Shell evolution of $N=40$ isotones towards \(\ce{^{60}Ca}\): First spectroscopy of \(\ce{^{62}Ti}\)" M.L. Cortés, W. Rodriguez, P. Doornenbal, A. Obertelli, J.D. Holt, S.M. Lenzi, J. Menéndez, F. Nowacki, K. Ogata, A. Poves, T.R. Rodríguez, A. Schwenk, J. Simonis, S.R. Stroberg, K. Yoshida, L. Achouri, H. Baba, F. Browne, D. Calvet, F. Château, S. Chen, N. Chiga, A. Corsi, A. Delbart, J.-M. Gheller, A. Giganon, A. Gillibert, C. Hilaire, T. Isobe, T. Kobayashi, Y. Kubota, V. Lapoux, H.N. Liu, T. Motobayashi, <strong>I. Murray</strong>, H. Otsu, V. Panin, N. Paul, H. Sakurai, M. Sasano, D. Steppenbeck, L. Stuhl, Y.L. Sun, Y. Togano, T. Uesaka, K. Wimmer, K. Yoneda, O. Aktas, T. Aumann, L.X. Chung, F. Flavigny, S. Franchoo, I. Gašparic, R.-B. Gerst, J. Gibelin, K.I. Hahn, D. Kim, T. Koiwai, Y. Kondo, P. Koseoglou, J. Lee, C. Lehr, B.D. Linh, T. Lokotko, M. MacCormick, K. Moschner, T. Nakamura, S.Y. Park, D. Rossi, E. Sahin, D. Sohler, P.-A. Söderström, S. Takeuchi, H. Toernqvist, V. Vaquero, V. Wagner, S. Wang, V. Werner, X. Xu, H. Yamada, D. Yan, Z. Yang, M. Yasuda, L. Zanetti, Phys. Lett. B, vol.800, pp.135071 (1-7), January 2020
+                                <li>"Enhancement of element production by incomplete fusion reaction with weakly bound deuteron", H. Wang, H. Otsu, N. Chiga, S. Kawase, S. Takeuchi, T. Sumikama, S. Koyama, H. Sakurai, Y. Watanabe, S. Nakayama, D. S. Ahn, H. Baba, S. D. Chen, K. Chikaato, M. L. Cortés, N. Fukuda, A. Hirayama, R. Hosoda, T. Isobe, S. Kawakami, Y. Kondo, S. Kubono, Y. Maeda, S. Masuoka, S. Michimasa, <strong>I. Murray</strong>, R. Nakajima, T. Nakamura, K. Nakano, M. Nishimura, T. Ozaki, A. Saito, T. Saito, H. Sato, Y. Shimizu, S. Shimoura, P. -A. Söderström, Y. Soudo, X. H. Sun, J. Suwa, D. Suzuki, H. Suzuki, H. Takeda, M. Takechi, Y. Togano, T. Tomai, H. Yamada, M. Yasuda, K. Yoshida, Nature Communications Physics, vol.2, 78, pp.1-7, July 2019
+                                <li>"Quasifree Neutron Knockout from \(\ce{^{54}Ca}\) Corroborates Arising N=34 Neutron Magic Number" S. Chen , J. Lee, P. Doornenbal, A. Obertelli, C. Barbieri, Y. Chazono, P. Navratil, K. Ogata, T. Otsuka, F. Raimondi, V. Soma, Y. Utsuno, K. Yoshida, H. Baba, F. Browne, D. Calvet, F. Chateau, N. Chiga, A. Corsi, M. L. Cortes, A. Delbart, J.-M. Gheller, A. Giganon, A. Gillibert, C. Hilaire, T. Isobe, J. Kahlbow, T. Kobayashi, Y. Kubota, V. Lapoux, H. N. Liu,,,5 T. Motobayashi, <strong>I. Murray</strong>,, H. Otsu, V. Panin, N. Paul, W. Rodriguez, H. Sakurai, M. Sasano, D. Steppenbeck, L. Stuhl, Y. L. Sun, Y. Togano, T. Uesaka, K. Wimmer, K. Yoneda, N. Achouri, O. Aktas, T. Aumann, L. X. Chung, F. Flavigny, S. Franchoo, I. Gasparic, R.-B. Gerst, J. Gibelin, K. I. Hahn, D. Kim, T. Koiwai, Y. Kondo, P. Koseoglou, C. Lehr, B. D. Linh, T. Lokotko, M. MacCormick, K. Moschner, T. Nakamura, S. Y. Park, D. Rossi, E. Sahin, D. Sohler, P.-A. Söderström, S. Takeuchi, H. Törnqvist, V. Vaquero, V. Wagner, S. Wang, V. Wern, Phys. Rev. Lett., vol.123(14), pp. 142501 (1-7), September 2019
+                                <li>"How Robust is the N=34 Subshell Closure? First Spectroscopy of \(\ce{^{52}Ar}\)" H. N. Liu, A. Obertelli, P. Doornenbal, C. A. Bertulani, G. Hagen, J. D. Holt, G. R. Jansen, T. D. Morris, A. Schwenk, R. Stroberg, N. Achouri, H. Baba, F. Browne, D. Calvet, F. Château, S. Chen, N. Chiga, A. Corsi, M. L. Cortés, A. Delbart, J.-M. Gheller, A. Giganon, A. Gillibert, C. Hilaire, T. Isobe, T. Kobayashi, Y. Kubota, V. Lapoux, T. Motobayashi, <strong>I. Murray</strong>, H. Otsu, V. Panin, N. Paul, W. Rodriguez, H. Sakurai, M. Sasano, D. Steppenbeck, L. Stuhl, Y. L. Sun, Y. Togano, T. Uesaka, K. Wimmer, K. Yoneda, O. Aktas, T. Aumann, L. X. Chung, F. Flavigny, S. Franchoo, I. Gašparić, R.-B. Gerst, J. Gibelin, K. I. Hahn, D. Kim, T. Koiwai, Y. Kondo, P. Koseoglou, J. Lee, C. Lehr, B. D. Linh, T. Lokotko, M. MacCormick, K. Moschner, T. Nakamura, S. Y. Park, D. Rossi, E. Sahin, D. Sohler, P.-A. Söderström, S. Takeuchi, H. Törnqvist, V. Vaquero, V. Wagner, S. Wang, V. Werner, X. Xu, H. Yamada, D. Yan, Z. Yang, M. Yasuda, and L. Zanetti, Phys. Rev. Lett., vol.122(7), pp.072502 (1-7), Feburary 2019
+                                <li>"First Spectroscopy of the Near Drip-line Nucleus \(\ce{^{40}Mg}\)" H. L. Crawford, P. Fallon, A. O. Macchiavelli, P. Doornenbal, N. Aoi, F. Browne, C. M. Campbell, S. Chen, R. M. Clark, M. L. Cortes, M. Cromaz, E. Ideguchi, M. D. Jones, R. Kanungo, M. MacCormick, S. Momiyama, <strong>I. Murray</strong>, M. Niikura, S. Paschalis, M. Petri, H. Sakurai, M. Salathe, P. Schrock, D. Steppenbeck, S. Takeuchi, Y. K. Tanaka, R. Taniuchi, H. Wang, and K. Wimmer, Phys. Rev. Lett., vol.122, pp.052501 (1-6), Feburary 2019
+                                <li>"Atomic masses of intermediate-mass neutron-deficient nuclei with relative uncertainty down to 35-ppb via multireflection time-of-flight mass spectrograph" S. Kimura, Y. Ito, D. Kaji, P. Schury, M. Wada, H. Haba, T. Hashimoto, Y. Hirayama, M. MacCormick, H. Miyatake, J. Y. Moon, K. Morimoto, M. Mukaiab, <strong>I. Murray</strong>, A. Ozawa, M. Rosenbusch, H. Schatz, A. Takamine, T. Tanaka, Y. X. Watanabe, H. Wollnik, International Journal of Mass Spectrometry, vol.430, pp.134-142, July 2018
+                                <li>"New mass anchor points for neutron-deficient heavy nuclei from direct mass measurements of radium and actinium isotopes" M. Rosenbusch, Y. Ito, P. Schury, M. Wada, D. Kaji, K. Morimoto, H. Haba, S. Kimura, H. Koura, M. MacCormick, H. Miyatake, J. Y. Moon, K. Morita, <strong>I. Murray</strong>, T. Niwase, A. Ozawa, M. Reponen, A. Takamine, T. Tanaka, and H. Wollnik, Phys. Rev. C, vol.97, pp.064306 (1-8), June 2018
+                                <li>"First Direct Mass Measurements of Nuclides around Z=100 with a Multireflection Time-of-Flight Mass Spectrograph" Y. Ito, P. Schury, M. Wada, F. Arai, H. Haba, Y. Hirayama, S. Ishizawa, D. Kaji, S. Kimura,, H. Koura, M. MacCormick, H. Miyatake, J. Y. Moon, K. Morimoto, K. Morita, M. Mukai, <strong>I. Murray</strong>, T. Niwase, K. Okada, A. Ozawa, M. Rosenbusch, A. Takamine, T. Tanaka, Y. X. Watanabe, H. Wollnik, and S. Yamaki, Phys. Rev. Lett., vol.120(15), pp.152501 (1-6), April 2018
+                                <li>"Observation of doubly-charged ions of francium isotopes extracted from a gas cell" P. Schury, M. Wada, Y. Ito, D. Kaji, H. Haba, Y. Hirayama, S. Kimura, H. Koura, M. MacCormick, H. Miyatake, J.Y. Moon, K. Morimoto, K. Morita, <strong>I. Murray</strong>, A. Ozawa, M. Rosenbusch, M. Reponen, A. Takamine, T. Tanaka, Y.X. Watanabe, H. Wollnik, Nuclear Instruments and Methods in Physics Research Section B: Beam Interactions with Materials and Atoms, vol.407, pp.160-165, September 2017
+                                <li>"$Q_{EC}$ value of the superallowed $\beta$ emitter \(\ce{^{42}Sc}\)" T. Eronen, J. C. Hardy, L. Canete, A. Jokinen, J. Hakala, A. Kankainen, V. S. Kolhinen, J. Koponen, I. D. Moore, <strong>I. Murray</strong>, H. Penttilä, I. Pohjalainen, O. Poleshchuk, J. Reinikainen, S. Rinta-Antila, N. Soukouti, A. Voss, and J. Äystö
+                                    Phys. Rev. C, vol.95, pp.025501 (1-4), February 2017
+                                <li>"Penning-trap-assisted study of excitations in \(\ce{^{88}Br}\) populated in $\beta$decay of \(\ce{^{88}Se}\)" M. Czerwiński, K. Sieja, T. Rząca-Urban, W. Urban, A. Płochocki, J. Kurpeta, J. Wiśniewski, H. Penttilä, A. Jokinen, S. Rinta-Antila, L. Canete, T. Eronen, J. Hakala, A. Kankainen, V. S. Kolhinen, J. Koponen, I. D. Moore, I. Pohjalainen, J. Reinikainen, V. Simutkin, A. Voss, <strong>I. Murray</strong>, and C. Nobs, Phys. Rev. C, vol.95, pp.024321 (1-9), February 2017
+                                <li>"First online multireflection time-of-flight mass measurements of isobar chains produced by fusion-evaporation reactions: Toward identification of superheavy elements via mass spectroscopy" P. Schury, M. Wada, Y. Ito, D. Kaji, F. Arai, M. MacCormick, <strong>I. Murray</strong>, H. Haba, S. Jeong, S. Kimura, H. Koura, H. Miyatake, K. Morimoto, K. Morita, A. Ozawa, M. Rosenbusch, M. Reponen, P.-A. Söderström, A. Takamine, T. Tanaka, and H. Wollnik, Phys. Rev. C Rapid Comm., vol.95, pp.011305 (1-6), January 2017
+                            </ul>
+                        <li>
+                            <h5>Peer Reviewed Conference Proceedings, Non-First Author</h5>
+                            <ul>
+                                <li>"Isotope-production cross sections of residual nuclei in proton- and deuteron-induced reactions on \(\ce{^{93}Zr}\) at 50 MeV/u", Keita Nakano, Yukinobu Watanabe, Shoichiro Kawase, He Wang, Hideaki Otsu, Hiroyoshi Sakurai, Nobuyuki Chiga, Junki Suwa, Toshiyuki Sumikama, Satoshi Takeuchi, Takashi Nakamura, Kazuya Chikaato, Maya Takechi, Shunpei Koyama, Deuk Soon Ahn, Hidetada Baba, Sidong Chen, Martha Liliana Cortes, Pieter Doornenbal, Naoki Fukuda, Akihiro Hirayama, Ryohei Hosoda, Tadaaki Isobe, Shunsuke Kawakami, Yosuke Kondo, Shigeru Kubono, Yukie Maeda, Shoichiro Masuoka, Shin’ichiro Michimasa, \underline{\smash{Ian Murray}}, Ryo Nakajima, Megumi Niikura, Tomoyuki Ozaki, Atsumi Saito, Takeshi Saito, Hiromi Sato, Yohei Shimizu, Susumu Shimoura, Yoshiki Soudo, Pär-Anders Söderström, Xiaohui Sun, Daisuke Suzuki, Hiroshi Suzuki, Hiroyuki Takeda, Yasuhiro Togano, Takato Tomai, Hiroki Yamada, Masahiro Yasuda, Koichi Yoshida, EPJ Web Conf., vol.239, pp.044605 (1-12), September 2020
+                                <li>"Spectroscopy of neutron-rich scandium isotopes", P. Koseoglou, V. Werner, N. Pietralla, P.-A. Söderström, P. Doornenbal, A. Obertelli, N. Achouri, H. Baba, F. Browne, D. Calvet, F. Ch{\^{a}}teau, S. Chen, N. Chiga, A. Corsi, M. L. Cort{\'{e}}s, A. Delbart, J-M. Gheller, A. Giganon, A. Gillibert, C. Hilaire, T. Isobe, T. Kobayashi, Y. Kubota, V. Lapoux, H. Liu, T. Motobayashi, <strong>I. Murray</strong>, H. Otsu, V. Panin, N. Paul, W. Rodriguez, H. Sakurai, M. Sasano, D. Steppenbeck, L. Stuhl, Y. L. Sun, Y. Togano, T. Uesaka, K. Wimmer, K. Yoneda, O. Aktas, T. Aumann, L. X. Chung, F. Flavigny, S. Franchoo, I. Gasparic, R.-B. Gerst, J. Gibelin, K. I. Hahn, D. Kim, T. Koiwai, Y. Kondo, J. Lee, C. Lehr, M. Lettmann, B. D. Linh, T. Lokotko, M. MacCormick, K. Moschner, T. Nakamura, S. Y. Park, D. Rossi, E. Sahin, D. Sohler, S. Takeuchi, H. Toernqvist, V. Vaquero, V. Wagner, S. Wang, X. Xu, H. Yamada, D. Yan, Z. Yang, M. Yasuda, L. Zanetti, Journal of Physics: Conference Series, vol.1555, pp.012026 (1-8), May 2020
+                                <li>"Study of Multi-neutron Systems with SAMURAI Spectrometer", Z. H. Yang, F. Marques, N. L. Achouri, D. Ahn, T. Aumann, H. Baba, D. Beaumel, M. Bohmer, K. Boretzky, V. Caamano, S. Chen, N. Chiga, M.L.Cort'es, D. Cortina, P. Doornenbal, C. Douma, F. Dufter, J. Feng, B.Fernandez-Dominguez, Z. Elekes, U. Forsberg, T. Fujino, N. Fukuda, I.Gavspari'c, Z. Ge, R. Gernhauser, J. M. Gheller, J. Gibelin, A. Gillibert, B.M.Godoy, Z. Hal{\'a}sz, T. Harada, M. Harakeh, A. Hirayama, S.W.Huang, N. Inabe, T. Isobe, J. Kahlbow, N. Kalantar-Nayestanaki, D.Kim, S. Kim, M. A. Knosel, T. Kobayashi, Y. Kondo, P. Koseoglou, Y.Kubota, I. Kuti, C. Lehr, P. Li, Y. Liu, Y. Maeda, S. Masuoka, M.Matsumoto, J. Mayer, H. Miki, M. Miwa, <strong>I. Murray</strong>, T. Nakamura, A.Obertelli, N. Orr, H. Otsu, V. Panin, S. Park, M. Parlog, S. Paschalis, M.Potlog, S. Reichert, A. Revel, D. Rossi, A. Saito, M. Sasano, H. Sato, H.Scheit, F. Schindler, T. Shimada, Y. Shimizu, S. Shimoura, I. Ştefan, S.Storck, L. Stuhl, H. Suzuki, D. Symochko, H. Takeda, S. Takeuchi, J.Tanaka, Y. Togano, T. Tomai, H. T. T. J. Tscheuschner, T.Uesaka, V. Wagner, K. Wimmer, H. Yamada, B. Yang, L. Yang, Y.Yasuda, K.Yoneda, L. Zanetti, J. Zenihiro, Recent Progress in Few-Body Physics, pp.529-534, Janurary 2020
+                            </ul>
+                        <li>
+                            <h5>Other Publications without Peer Review System</h5>
+                            <ul>
+                                <li>"DALI2+ at the RIKEN Nishina Center RIBF" <strong>I. Murray</strong>, F. Browne, S. Chen, M. L. Cortes, P. Doornenbal, H. Sakurai, J. Lee, M. MacCormick, W. Rodrigueuz, V. Vaquero, D. Steppenbak, K. Wimmer, RIKEN Accel. Prog. Rep., vol.51, pp.158, 2018
+                                <li>"A study of additional uncertainties from fit boundaries using a new code for multi-reflection time-of-flight data" M. Rosenbusch, Y. Ito, P. Schury, M. Wada,, D. Kaji, K. Morimoto, H. Haba, S. Kimura, H. Koura, M. MacCormick, H. Miyatake, J. Y. Moon, K. Morita, <strong>I. Murray</strong>, T. Niwase, A. Ozawa, M. Reponen, A. Takamine, T. Tanaka, and H. Wollnik, RIKEN Accel. Prog. Rep., vol.51, pp.103 2018
+                                <li>"Direct high-precision mass measurements of octupole-deformed nuclei with an MRTOF mass spectrometer", Y. Ito, M. Wada, P. Schury, M. Rosenbusch, D. Kaji, K. Morimoto, H. Haba, Y. Hirayama, S. Kimura, H. Koura, M. MacCormick, H. Miyatake, J.Y. Moon, K. Morita, M. Mukai, <strong>I. Murray</strong>, T. Niwase, K. Okada, A. Ozawa, M. Reponen, A. Takamine, T. Tanaka, H. Wollnik, S. Yamaki, Y.X. Watanabe, RIKEN Accel. Prog. Rep., vol.50, pp.66, 2017
+                                <li>"Measurement of multiple isobar chains as a first step toward SHE identification via mass spectrometry" P. Schury, M. Wada, Y. Ito, D. Kaji, A. Takamine, F. Arai, H. Haba, Y. Hirayama, S. Jeong, S. Kimura, H. Koura, M. MacCormick, H. Miyatake, J.Y. Moon, K. Morimoto, K. Morita, <strong>I. Murray</strong>, A. Ozawa, M. Reponen, M. Rosenbusch, P.A. Soderstrom, T. Tanaka, Y.X. Watanabe, H. Wollnik, RIKEN Accel. Prog. Rep., vol.50, pp.8, 2017
+                                <li>"Structure of Borromean nuclei", R. Kanungo, S. Bagchi, Y. Tanaka, H. Geissel, D. Ahn, H. Baba, K. Behr, F. Browne, S. Chen, M. L. Cortés, P. Doornenbal, A. Estrade, N. Fukuda, E. Haettner, M. Holl, K. Itahashi, N. Iwasa, S. Kaur, S. Matsumoto, S. Momiyama, <strong>I. Murray</strong>, T. Nakamura, H.J. Ong, S. Paschalis, A. Prochazka, C. Scheidenberger, P. Schrock, Y. Shimizu, D. Steppenbeck, D. Suzuki, H. Suzuki, S. Takeuchi, M. Takechi, H. Takeda, R. Taniuchi, K. Wimmer, and K. Yoshida, RIKEN Accel. Prog. Rep., vol.50, pp.51, 2017
+                                <li>"Current status of a gas-cell system for precision experiments with GARIS-II", Y. Ito, P. Schury, M. Wada, F. Arai, I. Katayama, <strong>I. Murray</strong>, K. Okada, M. Reponen, T. Sonoda, A. Takamine, H. Wollnik, H. Haba, D. Kaji, K. Morimoto, K. Morita, S. Kimura, H. Koura, RIKEN Accel. Prog. Rep., vol.49, pp.183, 2016
+                            </ul>
+                    </ul>
+                <li>
+                    <h4>First Author Oral or Poster Presentations</h4>
+                    <ul>
+                        <li>"Development of a Novel 3.7$\pi$ $\beta$-Detector for Post-Trap Decay Studies at IGISOL" <strong>I. Murray</strong>, IGISOL group, Annual Meeting of the Finnish Physical Society, Helsinki (Finland), (2015.5)
+                        <li>"Atomic mass measurements with a MR-ToF mass spectrograph" <strong>I. Murray</strong>, M. MacCormick, P. Schury, Y. Ito, M. Rosenbusch, J. Moon, M. Wada, D. Kaji, K. Morimoto, S. Kimura, M. Reponen, F. Arai, A. Takamine, A. Ozawa, K. Morita, H. Haba, H. Koura, S. Jeong, K. Okada, H. Wollnik, H. Miyatake, M. Mukai, Y. Hirayama, Y. Watanabe, P.A. Soederstroem, T. Tanaka, RIKEN summer school. Tsukuba (Japan), (2016.9)
+                        <li>"Future prospects of mass measurements on neutron rich nuclei at RIKEN SLOWRI utilizing an MR-ToF", <strong>I. Murray</strong>, M. MacCormick, P. Schury, Y. Ito, M. Rosenbusch, J. Moon, M. Wada, D. Kaji, K. Morimoto, S. Kimura, M. Reponen, F. Arai, A. Takamine, A. Ozawa, K. Morita, H. Haba, H. Koura, S. Jeong, K. Okada, H. Wollnik, H. Miyatake, M. Mukai, Y. Hirayama, Y. Watanabe, P.A. Soederstroem, T. Tanaka, Russbach School on Nuclear Astrophysics, Russbach (Austria), (2016.5)
+                        <li>"Delineating the N=20 Island of Inversion: An In-Beam Spectroscopic Study of \(\ce{^{32}Ne}\)", <strong>I. Murray</strong>, NP0906 and NP1312 collaborations, 36th Joliot-Curie International School, Les Isambres (France), (2017.9)
+                        <li>"Spectroscopy and Cross Sections of Near-Drip Line N=28 Aluminum and Island of Inversion Neon Produced by Nucleon Knockout Reactions", <strong>I. Murray</strong>, NP0906 and NP1312 collaborations, European Nuclear Physics Conference, Bologna (Italy), (2018.9)
+                    </ul>
+            </ul>
         </div>
     </main>
-    <footer class="footer mt-auto py-3 bg-light">
-        <div class="container">
-            <span class="text-muted">Place sticky footer content here.</span>
-        </div>
-    </footer>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/masonry.pkgd.min.js"></script>
 </body>
